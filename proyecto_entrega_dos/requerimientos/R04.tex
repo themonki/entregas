@@ -1,0 +1,69 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document}
+%para incluir comentar hasta acá
+\begin{center}
+%caluculado sobre el 90%, con 100% no queda bien
+%lo que se debe cambiar es lo que esta en MAYUSCULA
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Descripción del requerimiento:}}
+Eliminar usuarios. } & {\bf{ Estado}} & Análisis \\
+\hline
+\bf {Creado por} & Maria Andrea Cruz & \bf {Actualizado por} & Cristian Ríos \\
+\hline
+\bf {Fecha Creación } & Marzo 31 2011 & \bf {Fecha de Actualización }& Abril 28 2011\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R04} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{ El sistema debe proporcionar a los usuarios administradores una
+opción que permita eliminar lógicamente usuarios registrados, esto es, se
+le cambiará su estado a 'deshabilitado' lo que impedirá que ingrese al
+sistema, restringiendo así sus funcionalidades dentro del mismo. Los
+usuarios que se desea eliminar se seleccionan a partir de una lista
+creada por una consulta a la base de datos que muestre el o los posibles
+usuarios a eliminar.} \\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{ El sistema genera y muestra un mensaje de confirmación preguntando al administrador si está totalmente seguro de realizar dicha operación, de ser así, genera y muestra un mensaje informando del éxito o no de la operación solicitada.} \\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{ El sistema deberá realizar una actualización del estado del usuario o los usuarios eliminados en la base de datos.} \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema.} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Administrador.} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{3} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{\begin{itemize}
+        \item R06
+\end{itemize}} \\
+\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe estar conectado a la base de datos , un administrador debe estar logueado para poder tener acceso a la interfaz de eliminación de usuarios proporcionada por el sistema.} \\
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema en caso de tener éxito en la acción eliminar, actualiza en su base de datos los registros de los usuarios indicados para ser eliminados , por lo cual, el usuario ya no podrá ingresar al sistema.} \\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El requerimiento es aceptado si un usuario administrador puede buscar posibles usuarios a eliminar y de estos seleccionar los que desee para posteriormente eliminarlos, además, el usuario eliminado le será imposible ingresar al sistema.} \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document} %comentar para inlcuir

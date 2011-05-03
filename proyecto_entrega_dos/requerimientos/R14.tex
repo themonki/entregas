@@ -1,0 +1,64 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document}
+%para incluir comentar hasta acá
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Descripción del requerimiento:}}
+Almacenar nuevos autores de los documentos presentes en el sistema } & {\bf{ Estado}} & Análisis \\
+\hline
+\bf {Creado por} & Maria Andrea Cruz & \bf {Actualizado por} & Cristian Ríos\\
+\hline
+\bf {Fecha Creación } & Marzo 31 2011 & \bf {Fecha de Actualización }& Abril 28 2011\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R14} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe de proporcionar la manera de poder almacenar nuevos autores de los documentos en el sistema para poder lograr esto, se debe mantener cierta información del nuevo autor, esta información corresponde a: nombre, apellido, correo electrónico y acrónimo, donde todos son cadenas de caracteres.} \\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema genera y muestra un mensaje de notificación indicando al usuario que esté realizando la operación de creación de nuevo autor del éxito o no de la misma.} \\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema deberá realizar un cambio en la base de datos agregando nuevos registros en las tabla correspondiende a autor para mantener la información de los nuevos autores.} \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema.} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Catalogador, administrador.} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{5} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{\begin{itemize}
+        \item R06
+        \item R07
+        \item R08
+        \item R09
+\end{itemize}} \\\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe estar conectado a la base de datos permitiendo realizar modificaciones sobre esta y haber ingresado al sistema un usuario con perfil administrador o catalogador.} \\
+\hline
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema en su base de datos debera tener un nuevo registro que representa al nuevo autor ingresado. El autor posteriroemente podrá ser asociado con uno o varios documentos presentes en la biblioteca, esto forma parte de la catalogación del documento lo que permite una mejora el la búsqueda del mismo.}\\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El requerimiento es aceptado si al ingresar al sistema un usuario con perfil administrador o catalogador, este puede seleccionar la opción de crear un nuevo autor proporcionando datos sobre este y posteriormente poder hacer referencia a este autor en la asignación de datos del documento} \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document} %comentar para inlcuir

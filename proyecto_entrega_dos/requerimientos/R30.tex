@@ -1,0 +1,62 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document}
+%para incluir comentar hasta acá
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Descripción del requerimiento:}}
+Generar reportes en formato PDF del total de usuarios registrados. } & {\bf{ Estado}} & Análisis \\
+\hline
+\bf {Creado por} & Maria Andrea Cruz & \bf {Actualizado por} & María Andrea Cruz\\
+\hline
+\bf {Fecha Creación } & Marzo 31 2011 & \bf {Fecha de Actualización }& Abril 28 2011\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R30} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe proveer una interfaz para que el usuario con perfil administrador pueda generar reportes en formato PDF de todos los usuarios registrados en el sistema.} \\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema pide los parámetros para generar el reporte, el usuario debe elegir total usuarios registrados, entonces se muestra un cuadro de dialogo pidiendo la dirección donde se guardará el reporte, y otro cuadro de dialogo notificando la entrega del reporte.} \\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema deberá consulta a la base de datos todos los usuarios resgistrados, y organizando los resultados por nombre en una plantilla generar el reporte en formato PDF.} \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema.} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Administrador} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{3} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{\begin{itemize}
+\item R01
+\item R02
+\end{itemize}} \\
+\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{Haberse logueado como administrador.} \\
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{Un archivo PDF que corresponde al informe elaborado por el sistema, onde organizado en tablas se muestran la informacion de todos los usuarios registrados, esto es: login, nombre1, apellido1, email, vinculo con Univalle, género, fecha de registro, fecha de nacimiento, fecha de registro, tipo de usuario y estado.} \\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El requerimiento es aceptado si se genera el reporte en formato PDF y  con la información pedida.} \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document} %comentar para inlcuir

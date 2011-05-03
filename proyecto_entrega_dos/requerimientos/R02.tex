@@ -1,0 +1,63 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document}
+%para incluir comentar hasta acá
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Descripción del requerimiento:}}
+Proporcionar un perfil a cada usuario. } & {\bf{ Estado}} & Análisis \\
+\hline
+\bf {Creado por} & Maria Andrea Cruz & \bf {Actualizado por} & Cristian Ríos \\
+\hline
+\bf {Fecha Creación } & Marzo 31 2011 & \bf {Fecha de Actualización }& Abril 28 2011\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R02} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe proporcionar un perfil a cada usuario, esto aplica a los usuarios que ya están registrados, es decir, se encuentran el la base de datos, esta acción es gestionada por el administrador. Por defecto todo usuario registrado tiene como perfil ‘Usuario Normal’} \\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{El administrador recibe una mensaje notificando el éxito o no de la operación y el usuario implicado recibe una notificación de su cambio de estado en el sistema.} \\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema deberá actualizar la base de datos permitiendo al usuario que se le a actualizado su perfil tener nuevas funcionalidades en el sistema.} \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema.} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Catalogador, administrador y usuarios normales.} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{3} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{\begin{itemize}
+        \item R06
+\end{itemize} } \\
+\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe estar conectado a una base de datos, un administrador debe haberse logueado en el sistema lo que permite privilegios en cuanto al cambio de perfil de otros usuarios.} \\
+\hline
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema de ahora en adelante reconoce al usuario modificado en su perfil de manera diferente, otorgándole determinados privilegios así como su interfaz de usuario correspondiente.} \\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El requerimiento es aceptado si cada usuario que se registre tiene como perfil 'Usuario Normal' y si posteriormente, un usuario administrador puede actualizar el perfil del usuario a 'Catalogador' o 'Administrador'.}
+\\
+\hline
+\end{longtable}
+\end{center}
+%\end{document} %comentar para inlcuir

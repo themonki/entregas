@@ -1,0 +1,63 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document}
+%para incluir comentar hasta acá
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Descripción del requerimiento:}}
+Modificar datos de documentos. } & {\bf{ Estado}} & Análisis \\
+\hline
+\bf {Creado por} & Maria Andrea Cruz & \bf {Actualizado por} & Maria Andrea Cruz \\
+\hline
+\bf {Fecha Creación } & Marzo 31 2011 & \bf {Fecha de Actualización }& Abril 28 2011\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R09} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{ El sistema debe proporcionar la manera de poder modificar los datos de los documentos que se encuentran referenciados en la base de datos por usuarios que tengan como perfil catalogador o administrador. El sistema debe de proporcionar al usuario que este realizando la modificación, los datos actuales que tiene el documento para que pueda decidir cuales de estos campos será modificados. El área de las ciencias de la computación a la cual pertenece el documento no se puede modificar después de que haya sido asignada. } \\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{ El sistema genera y muestra un mensaje de notificación al usuario que este realizando la actualización indicando el éxito o no de la operación.} \\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{ El sistema debera realizar una actualizaciín en la base de datos con nueva información actualizada y correcta del documento que el usuario desea actualizar.} \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema.} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Catalogador, administrador.} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{3} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{\begin{itemize}
+        \item R06
+        \item R07
+        \item R08
+\end{itemize}} \\\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe estar conectado a la base de datos y el usuario registrado debe corresponder a un catalogador o un administrador lo que les proporcionará una interfaz que permitirá listar documentos con sus respectivos datos y de esta manera modificarlos.} \\
+\hline
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema presenta una actualización en la base de datos con respeto al registro de documentos donde se ha corregido o actualizado información lo que permite tener una mejor experiencia por parte de los usuarios al consultar.} \\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El requerimiento es aceptado si un usuario con perfil administrador o catalogador puede modificar y actualizar los datos de los documentos.} \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document} %comentar para inlcuir

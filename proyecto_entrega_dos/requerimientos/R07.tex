@@ -1,0 +1,62 @@
+%\documentclass[letter]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document}
+%para incluir comentar hasta acá
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Descripción del requerimiento:}}
+Almacenar documentos digitales. } & {\bf{ Estado}} & Análisis \\
+\hline
+\bf {Creado por} & Maria Andrea Cruz & \bf {Actualizado por} & Cristian Ríos \\
+\hline
+\bf {Fecha Creación } & Marzo 31 2011 & \bf {Fecha de Actualización }& Abril 28 2011\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R07} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{ El sistema debe de proporcionar la manera de almacenar persistentemente los documentos que vayan apareciendo para la biblioteca digital, los documentos almacenados tiene una ruta en el sistema operativo host y esta ruta será almacenada en la base de datos con algunos otros datos asociados al documento. Esta operación podrá ser ejecutado por usuarios que tengan como perfil administrador o catalogador.
+} \\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{ El sistema genera un mensaje notificando al usuario que este solicitando la operación el éxito o no de esta.} \\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{ El sistema deberá almacenar de manera persistente el documento requerido y la ruta de este en la base de datos.} \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema.} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Catalogador, administrador.} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{5} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{\begin{itemize}
+        \item R08
+\end{itemize}} \\\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe tener acceso a la base de datos y haberse logueado en él un usuario cuyo perfil sea adminsitrador o catalogador, este usuario deberá disponer de una interfaz que permita introducir información relativa al documento como lo es su lugar de origen. } \\
+\hline
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema guarda el documento en el disco duro y el registro en la base de datos mostrando una notificación de lo realizado. } \\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El requerimiento es aceptado si un usuario administrador o catalogador ingresa al sistema y logra  subir un nuevo documento a la biblioteca digital.} \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document} %comentar para inlcuir

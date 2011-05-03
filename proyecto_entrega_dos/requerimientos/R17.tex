@@ -1,0 +1,62 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document}
+%para incluir comentar hasta acá
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Descripción del requerimiento:}}
+Creación de nuevas palabras clave. } & {\bf{ Estado}} & Análisis \\
+\hline
+\bf {Creado por} & Maria Andrea Cruz & \bf {Actualizado por} & Cristian Ríos \\
+\hline
+\bf {Fecha Creación } & Marzo 31 2011 & \bf {Fecha de Actualización }&  Mayo 01 2011 \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R17} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe de permitir a los usuarios con perfil administrador o catalogador la creación de nuevas palabras clave en el sistema, para poder crear una nueva palabra clave es necesario proporcionar su nombre y una descripción, ambas cadenas de caracteres. } \\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema genera un mensaje notificando al usuario que esta realizando la operación del éxito o no de la misma y proporciona una nueva palabra clave que puede ser asociada a un documento.}\\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{ El sistema deberá realizar un cambio en la base de datos al crear una nueva tupla en la tabla que mantiene las palabras clave.} \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema.} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Catalogador, administrador.} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{5} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{\begin{itemize}
+        \item R06
+        \item R08
+\end{itemize} } \\
+\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe estar conectado a la base de datos y haber ingresado en el un usuario catalogador o administrador.} \\
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema en su base de datos ahora contiene más registros representando palabras clave, estas palabras clave serán asociadas con los documentos existentes, lo que mejorará la experiencia de búsqueda de documentos en el sistema.} \\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El requerimiento es aceptado si un usuario que ingrese al sistema y tenga perfil administrador o catalogador tiene la opción de crear una nueva palabra clave y esta palabra clave esta disponible para su uso en la asignación de datos a los documentos.} \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document} %comentar para inlcuir
