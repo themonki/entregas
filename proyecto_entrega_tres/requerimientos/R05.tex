@@ -1,0 +1,65 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document}
+%para incluir comentar hasta acá
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Funcición del requerimiento:}}
+Enviar notificación a los usuarios de nuevos documentos registrados en un área de su interés. } & {\bf{ Estado}} & Análisis \\
+\hline
+\bf {Creado por} & María Andrea Cruz & \bf {Actualizado por} & Cristian Ríos \\
+\hline
+\bf {Fecha Creación } & Marzo 31 2011 & \bf {Fecha de Actualización }& Abril 28 de 2011\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R05} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe proporcionar a cada usuario una notificación cuando este ingrese la siguiente vez al sistema de los nuevos documentos que hayan sido catalogados en un área en la que el usuario haya mostrado interés. } \\
+\hline
+\bf Datos de entrada &\multicolumn{3}{p{0.675\textwidth}|}{
+Se debe de proporcionar como datos las nuevas áreas catalogadas para poder relacionarlas con las preferencias de los usuario.}\\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema informará al usuario de los nuevos documentos que ahora se encuentran en su área de interés. } \\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema deberá realizar notificaciones a los usuarios y estos a partir de las notificaciones empiezan a consultar y descargar los nuevos documentos. El sistema no presenta ningún cambio de estado.} \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Catalogador, administrador y usuarios normales.} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{4} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{\begin{itemize}
+        \item R07
+        \item R08
+\end{itemize}
+} \\\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe tener acceso a la base de datos para establecer que usuarios tiene como áreas de interés las que corresponden a los nuevos documentos catalogados.} \\
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{Se podréa ver un aumento en la cantidad de consultas para el documento catalogado ya que los usuarios han sido notificados y empezarán a consultar estos nuevos documentos.} \\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El requerimiento es aceptado si a los usuarios registrados que muestren preferencia por alguna área del conocimiento se les notifica de nuevos documentos catalogados en estas áreas.} \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document} %comentar para inlcuir

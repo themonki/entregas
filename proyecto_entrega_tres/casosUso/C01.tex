@@ -1,0 +1,96 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\usepackage{graphicx}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%
+%\begin{document}
+
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+{\bf {Empresa:}} &
+\multicolumn{2}{p{0.45\textwidth}|} { Escuela de Ingeniería de Sistemas y Computación } &
+{\includegraphics[width=80.5pt]{LOGO}} \\
+\hline
+\bf {Nombre del caso de uso:}&\multicolumn{3}{l|}{
+Autenticar.
+} \\
+\hline
+\bf Codigo: & 
+CU01 &\bf Fecha: & 
+Abril 02 2011 \\
+\hline
+\bf Autor(es ): & 
+Edgar Andrés Moncada & 
+ & 
+ \\
+\hline
+\bf Descripcion: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Permite el ingreso y autenticación de los usuarios al sistema.
+} \\
+\hline
+\bf Actores: &\multicolumn{3}{p{0.675\textwidth}|}{
+Administrador, Catalogador, Usuario Normal. 
+} \\
+\hline
+\bf Precondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Estar registrado en la biblioteca.
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Normal}}\\
+\hline
+\multicolumn{2}{|c}{\bf Actor} & \multicolumn{2}{|c|}{\bf Sistema } \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{
+\begin{itemize}
+\item[1.] El Usuario selecciona la opción ingresar a la biblioteca.
+\item[3.] El Usuario rellena los respectivos campos con su login y su contraseña y selecciona la opción ingresar.
+\end{itemize}
+} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+\item[2.] El sistema muestra los campos de login y contraseña.
+\item[4.] El sistema verifica que el login exista y que la contraseña corresponde con la que se tiene almacenada.
+\item[5.] El sistema actualiza el estado del usuario y el caso de uso termina.
+\end{itemize}
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Alternativo}}\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+\item[4.1.]El Sistema alverificar se da cuenta que el login digitado por el usuario no existe
+\item[5.1.]El Sistema indica que no existe el login y pide al usuario los datos de nuevo.
+\item[4.2.] El Sistema al verificar se da cuenta que la contraseña digitada por el Usuario es errónea.
+\item[5.2.] El Sistema envía una notificación indicando que la contraseña es errónea y que repita el proceso.
+\end{itemize}
+} \\
+\hline
+\bf Poscondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+El sistema actualiza el perfil de usuario. El usuario identificado esta activo en el sistema.
+} \\
+\hline
+\bf Excepciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+El sistema no puede acceder a la base de datos y no puede verificar el login y/o la contraseña del usuario.
+} \\
+\hline
+\bf Aprobado por : & 
+ & \bf Fecha & 
+ \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document}

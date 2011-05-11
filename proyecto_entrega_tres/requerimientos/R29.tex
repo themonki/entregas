@@ -1,0 +1,69 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document}
+%para incluir comentar hasta acá
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Funcción del requerimiento:}}
+Generar reportes en formato PDF de los documentos existentes por autor. } & {\bf{ Estado}} & Análisis \\
+\hline
+\bf {Creado por} & Maria Andrea Cruz & \bf {Actualizado por} & María Andrea Cruz\\
+\hline
+\bf {Fecha Creación } & Marzo 31 2011 & \bf {Fecha de Actualización }& 
+Abril 28 2011\\
+Mayo 10 2011\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R29} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe proveer una interfaz para que el usuario con  perfil administrador pueda generar reportes en formato PDF de los documentos existentes por autor.} \\
+\hline
+\bf Datos de entrada &\multicolumn{3}{p{0.675\textwidth}|}{
+El usuario administrador que esté solicitando el reporte debe de proporcionar el nombre del reporte al momento en que el sistema pide los parámetros para generar el reporte, en este caso el usuario deberá elegir 'documentos existentes ordenados por autor'. Además, una vez se haya generado el reporte debera de proporcionar la dirección donde se guardará el reporte.}\\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema generará y mostrará un cuadro de dialogo notificando la generación y entrega del reporte.} \\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema deberá consultar a la base de datos todos los documentos agrupándolos por autor, y organizar los resultados en una plantilla para generar el reporte en formato PDF.} \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema.} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Administrador} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{3} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{\begin{itemize}
+\item R07
+\item R08
+\item R09
+\item R14
+\end{itemize}} \\
+\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{Haberse logueado como administrador.} \\
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{Un archivo PDF que corresponde al informe elaborado por el sistema, donde organizado en tablas se muestran los documentos existentes por autor.} \\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El requerimiento es aceptado si se genera el reporte en formato PDF con la información solicitada.} \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document} %comentar para inlcuir

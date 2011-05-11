@@ -1,0 +1,93 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\usepackage{graphicx}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%
+%\begin{document}
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+{\bf {Empresa:}} &
+\multicolumn{2}{p{0.45\textwidth}|} { Escuela de Ingeniería de Sistemas y Computación } &
+{\includegraphics[width=80.5pt]{LOGO}} \\
+\hline
+\bf {Nombre del caso de uso:}&\multicolumn{3}{l|}{
+Consultar usuarios.
+} \\
+\hline
+\bf Codigo: & 
+CU05 &\bf Fecha: & 
+Abril 02 2011 \\
+\hline
+\bf Autor(es ): & 
+Edgar Andrés Moncada & 
+Yerminson Gonzalez & 
+ \\
+\hline
+\bf Descripcion: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Permite la consulta de usuarios que están registrados al sistema.
+} \\
+\hline
+\bf Actores: &\multicolumn{3}{p{0.675\textwidth}|}{
+Administrador. 
+} \\
+\hline
+\bf Precondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+El usuario debe haberse autentificado en el sistema y tener perfil de administrador.
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Normal}}\\
+\hline
+\multicolumn{2}{|c}{\bf Actor} & \multicolumn{2}{|c|}{\bf Sistema } \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{
+\begin{itemize}
+\item[1. ]El caso de uso inicia cuando el cliente solicita la consulta de usuarios.
+\item[3. ]El administrador escribe las palabras claves con respecto a la búsqueda y solicita al sistema que se realiza la búsqueda.
+\end{itemize}
+} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+ \item[2.] El sistema responde a través de una interfaz que permite introducir las palabras claves por las cuales se desea buscar algún usuario.
+\item[4.] El sistema envía la consulta a la base de datos y con la información obtenida genera una interfaz donde muestra de manera organiza los resultados obtenidos.
+\item[5.] El sistema envía esta interfaz al usuario como resultado de su consulta y el caso de uso termina.
+\end{itemize}
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Alternativo}}\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+\item[4.1.] El Sistema realiza la consulta a la base de datos, y obtiene como resultado una consulta vacía debido  a que las palabras claves digitadas por el Usuario no coinciden con ninguno en la base datos..
+\item[5.1.] EL sistema envía un mensaje informándole al Usuario de que no se encontraron coincidencias para esa búsqueda.
+\end{itemize}
+} \\
+\hline
+\bf Poscondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Se crea una vista temporal de los usuarios que han sido consultados.
+} \\
+\hline
+\bf Excepciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+a base de datos puede desconectarse debido a fallos de energía.
+} \\
+\hline
+\bf Aprobado por : & 
+ & \bf Fecha & 
+ \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document}

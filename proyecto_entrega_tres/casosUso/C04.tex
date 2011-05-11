@@ -1,0 +1,96 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\usepackage{graphicx}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%
+%\begin{document}
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+{\bf {Empresa:}} &
+\multicolumn{2}{p{0.45\textwidth}|} { Escuela de Ingeniería de Sistemas y Computación } &
+{\includegraphics[width=80.5pt]{LOGO}} \\
+\hline
+\bf {Nombre del caso de uso:}&\multicolumn{3}{l|}{
+Eliminación de Usuarios.
+} \\
+\hline
+\bf Codigo: & 
+CU04 &\bf Fecha: & 
+Abril 02 2011 \\
+\hline
+\bf Autor(es ): & 
+Edgar Andrés Moncada & 
+Yerminson Gonzalez & 
+ \\
+\hline
+\bf Descripcion: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Permite la eliminación logica de  registros de usuarios del Sistema.
+} \\
+\hline
+\bf Actores: &\multicolumn{3}{p{0.675\textwidth}|}{
+Administrador. 
+} \\
+\hline
+\bf Precondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Tener el perfil de Usuario Administrador. Haberse autenticado en el Sistema. Haber consultado y seleccionado previamente un Usuario.
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Normal}}\\
+\hline
+\multicolumn{2}{|c}{\bf Actor} & \multicolumn{2}{|c|}{\bf Sistema } \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{
+\begin{itemize}
+\item[1.]El caso de uso inicia cuando el Administrador selecciona la opción Eliminar Usuario Seleccionado.
+\item[3.] El Administrador indica que si a la     confirmación.
+\end{itemize}
+} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+\item[2.]El Sistema envía una notificación de confirmación de la acción eliminar.
+\item[4.]El Sistema elimina el Usuario seleccionado no permanentemente si no de manera lógica(no se permite acceso pero aun persiste en la base de datos su información) es decir cambia un valor en el campo estado que representa si esta activo o no en el sistema.
+\item[5.]El Sistema envía una notificación de la acción al Administrador y el caso de uso termina.
+\end{itemize}
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Alternativo}}\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{
+\begin{itemize}
+\item[3.1.] El Administrador indica que no a la  notificación de confirmación de eliminación.
+\end{itemize}
+} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+\item[4.1. ]El Sistema cancela la acción de eliminar y el caso de uso termina.
+ \end{itemize}
+} \\
+\hline
+\bf Poscondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Cambia de valor el atributo estado de la tupla del usuario.
+} \\
+\hline
+\bf Excepciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+El Sistema no puede acceder a la base de datos para realizar la eliminación.
+} \\
+\hline
+\bf Aprobado por : & 
+ & \bf Fecha & 
+ \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document}

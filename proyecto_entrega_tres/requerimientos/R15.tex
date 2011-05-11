@@ -1,0 +1,66 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document}
+%para incluir comentar hasta acá
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Función del requerimiento:}}
+Permitir modificar los datos de los autores existentes en el sistema. } & {\bf{ Estado}} & Análisis \\
+\hline
+\bf {Creado por} & Maria Andrea Cruz & \bf {Actualizado por} & Cristian Ríos\\
+\hline
+\bf {Fecha Creación } & Marzo 31 2011 & \bf {Fecha de Actualización }& 
+Abril 28 2011\\
+Mayo 09 2011\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R15} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{ El sistema debe de permitir a los usuarios con perfil administrador o catalogador modificar los datos de los autores que en el momento se encuentren registrados. El sistema proporcionará al usuario que este tratando de realizar la operación un lista de los posibles autores a modificar, de alli podrá seleccionar al que desee y una vez seleccionado, el sistema debe mostrar la información actual del autor y permitir asignar nueva información} \\
+\hline
+\bf Datos de entrada &\multicolumn{3}{p{0.675\textwidth}|}{
+El usuario que dese modificar un autor existente debe de proporcionar su nombre, apellido, dirección de correo electrónico y acrónimo, si alguno de estos datos no se es proporcionado, se toma el dato que existe actualmente.}\\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema genera un mensaje y notifica al usuario que este realizando la operación del éxito o no de la misma.} \\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema deberá actualizar en la tabla de la base de datos que mantiene la información de los autores el registro relacionado con el autor al que se le han modificado los datos. } \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema.} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Catalogador y administrador} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{3} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{\begin{itemize}
+        \item R14
+\end{itemize}} \\
+\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe estar conectado a la base de datos permitiendo modificar registros respecto a los autores registrados en la biblioteca digital y realizar consultas del estado actual de los autores, además el usuario que desee realizar la operación debe de haber ingresado al sistema y tener como perfil administrador o catalogador.} \\
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema realiza una actualizacion de información referente al autor modificado en la base de datos} \\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El requerimiento es aceptado si al ingresar un usuario adminsitrador o catalogador al sistema este tiene la opción de poder modificar los datos de los autores existentes en el sistema.} \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document} %comentar para inlcuir
