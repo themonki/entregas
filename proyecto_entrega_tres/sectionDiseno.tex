@@ -1,0 +1,271 @@
+%\documentclass[11pt]{article}
+%\usepackage[utf8]{inputenc}
+%\usepackage[spanish]{babel}
+%\usepackage[]{graphicx}
+%\usepackage{colortbl} %para las tablas
+%\usepackage{longtable} %para las tablas
+%\usepackage{geometry}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%
+%\begin{document}
+
+%****************************************************************
+\subsection{Diagrama de Clases}
+				
+	\begin{tabular}{|p{5cm}|p{11cm}|}\hline
+	{\bf Titulo} & {Diagrama de Clases Usuario}\\
+	\hline
+	{\bf Descripción} & {El diagrama de clases usuario reune todas las clases
+	relacionadas con la gestión de usuarios en el sistema.\newline
+	Explica como se modelo la gestión de usuarios; las clases que interactúan 
+	directamente con el usuario	son las guis: GuiAutenticar usada para ingresar
+	al sistema, GuiConsultarUsuarios usada para realizar las consultas de usuarios
+	para dar soporte al caso de uso modificar usuarios, esta gui es usada por el usuario
+	administrador, GuiRegistroModificar es usada para que un usuario se registre
+	en el sistema, también para que un usuario registrado pueda modificar sus datos, y
+	finalmente para que un usuario administrador pueda modificar estado (activo-desactivo) y
+	perfil de un usuario normal. \newline
+	La clase que se usa para modelar la entidad Usuario del modelo de datos es precisamente
+	la clase usuario, esta clase como se muestra en el diagrama se usa a nivel de gui hacia
+	abajo, está también la clase ControladorUsuario que se encarga de realizar las debidas
+	verificaciones y de enviar correctamente los datos para las consultas a la clase DaoUsuario 
+	que es quien se comunica directamente con la base de datos del sistema.\newline
+	Las clases ControladorVentanaPrincipal, DaoArea, Area y FachadaBD son clases que se usan para 
+	lograr la gestión de usuarios, las relaciones se muestran en el diagrama.}\\
+	\hline
+	\end{tabular}\\[.5cm]
+		
+	\begin{tabular}{|p{3.5cm}|p{4.5cm}|p{2.5cm}|p{4.5cm}|}\hline
+	{\bf Creado Por} & {Edgar Andrés Moncada} & {\bf Fecha} & {Abril 25 2011}\\
+	\hline
+	{\bf Actualizado por} & {Yerminson Gonzalez} & {\bf Fecha} & {Mayo 10 2011}\\
+	\hline
+	\end{tabular}
+
+	\begin{minipage}[c]{1\linewidth}
+	\centering
+	\includegraphics[width=20cm, height=17cm, angle=90]{diagramasClase/DiagramaClases1}
+	\end{minipage}
+			
+	%especificación detallada
+	\input{diagramasClasesUsuario.tex}	
+	
+	%-------------------------------------------------------------------------------	
+
+				
+	\begin{tabular}{|p{5cm}|p{11cm}|}\hline
+	{\bf Titulo} & {Diagrama de Clases Documento}\\
+	\hline
+	{\bf Descripción} & {El diagrama de clases documento reune todas las clases
+	relacionadas con la gestión de documentos en el sistema.\newline
+	La clase GuiCatalogarModificar es la que permite el registro de nuevos documentos
+	en el sistema, Documento modela la entidad documento en el modelo de datos esta clase
+	se usa de la gui hacia abajo, la clase ControladorDocumento realiza las verificaciones 
+	pertinentes, y envia los valores para realizar consultas y actualizaciones a la clase 
+	DaoDocumento que es la encargada de comunicarse directamente con la base de datos del
+	sistema.\newline
+	Las clases FachadaBD, GuiIngresarArea, GuiIngresarAutor, GuiIngresarTipoMaterial,
+	GuiIngresarPalabraClave,ControladorArea, ControladorAutor, ControladorTipoMaterial,
+	ControladorPalabraClave, PalabraClave, Autor, y Area son usadas para lograr la gestión de
+	documentos.}\\
+	\hline
+	\end{tabular}\\[.5cm]
+	
+	\begin{tabular}{|p{3.5cm}|p{4.5cm}|p{2.5cm}|p{4.5cm}|}\hline
+	{\bf Creado Por} & {Luis Felipe Vargas} & {\bf Fecha} & {Abril 28 2011}\\
+	\hline
+	{\bf Actualizado por} & {Edgar Andrés Moncada} & {\bf Fecha} & {Mayo 10 2011}\\
+	\hline
+	\end{tabular}
+
+	\begin{minipage}[c]{1\linewidth}
+	\centering
+	\includegraphics[width=20cm, height=17cm, angle=90]{diagramasClase/DiagramaClases2}
+	\end{minipage}
+			
+	%especificación detallada
+	\input{diagramasClasesDocumento.tex}	
+			
+	%-------------------------------------------------------------------------------	
+	
+			
+	\begin{tabular}{|p{5cm}|p{11cm}|}\hline
+	{\bf Titulo} & {Diagrama de Clases Consulta}\\
+	\hline
+	{\bf Descripción} & {El diagrama de clases consulta reune todas las clases
+	relacionadas con las consultas a documentos que los usuario realizan en el sistema,
+	ya sean consultas generales o avanzadas. Para esto se tiene las clases que interactúan
+	directamente con el usuario como lo son: GuiVistaDocumento que permite ver la información del
+	documento de forma detallada, GuiConsultaBasica es la que permite que un usuario del sistema
+	pueda realizar una consulta de forma rápida, GuiConsultaAvanzada que permite realizar una
+	busqueda introducciendo datos especificos y la clase GuiResultadoConsulta que es la que permite
+	ver la lista de documentos que se encuentran después de realizar una consulta usando ya sea
+	GuiConsultaBasica o GuiConsultaAvanzada.\newline
+	También se incluyen las clases ControladorConsulta que realiza verificaciones sobre los
+	parametros de busqueda de una consulta y envia los respectivos valores a la clase DaoConsulta
+	la cual realiza la consulta a la base de datos del sistema y construye la respuesta. Y se usar
+	la clase FachadaBD para lograr la conexión con la base de datos.}\\
+	\hline
+	\end{tabular}\\[.5cm]
+		
+	\begin{tabular}{|p{3.5cm}|p{4.5cm}|p{2.5cm}|p{4.5cm}|}\hline
+	{\bf Creado Por} & {María Andrea Cruz} & {\bf Fecha} & {Abril 27 2011}\\
+	\hline
+	{\bf Actualizado por} & {Yerminson Gonzalez} & {\bf Fecha} & {Mayo 11 2011}\\
+	\hline
+	\end{tabular}
+
+	\begin{minipage}[c]{1\linewidth}
+	\centering
+	\includegraphics[width=20cm, height=17cm, angle=90]{diagramasClase/DiagramaClases3}
+	\end{minipage}
+			
+	%especificación detallada
+	\input{diagramasClasesConsultas.tex}
+			
+	%-------------------------------------------------------------------------------			
+	
+		
+	\begin{tabular}{|p{5cm}|p{11cm}|}\hline
+	{\bf Titulo} & {Diagrama de Clases Reporte}\\
+	\hline
+	{\bf Descripción} & {El diagrama de clases reporte reune todas las clases
+	relacionadas con la generación de reportes del sistema para observar estadisticas y
+	comportamientos de los usuarios del sistema.\newline
+	Se incluyen las clases GuiReportes que permite al usuario administrador escoger de manera
+	parametrizada las variables para generar el reporte, ControladorReportes realiza
+	verificaciones y envia a la clase DaoReportes quien es la clase que realiza las consultas a
+	la base de datos del sistema. La clase FachadaBD es usada para realizar la conexión a la
+	base de datos.}\\
+	\hline
+	\end{tabular}\\[.5cm]
+		
+	\begin{tabular}{|p{3.5cm}|p{4.5cm}|p{2.5cm}|p{4.5cm}|}\hline
+	{\bf Creado Por} & {Yerminson Gonzalez} & {\bf Fecha} & {Abril 28 2011}\\
+	\hline
+	{\bf Actualizado por} & {María Andrea Cruz} & {\bf Fecha} & {Mayo 11 2011}\\
+	\hline
+	\end{tabular}\\[.5cm]
+
+	\begin{minipage}[c]{1\linewidth}
+	\centering
+	\includegraphics[width=13cm, height=12cm]{diagramasClase/DiagramaClases4}
+	\end{minipage}
+			
+	%especificación detallada
+	\input{diagramasClasesReportes.tex}		
+
+	%-------------------------------------------------------------------------------			
+
+		
+	\begin{tabular}{|p{5cm}|p{11cm}|}\hline
+	{\bf Titulo} & {Diagrama de Clases Gestión Documentos}\\
+	\hline
+	{\bf Descripción} & {El diagrama de clases gestión documentos reune todas las
+	clases relacionadas con la catalogación de documentos en el sistema.\newline
+	Se tiene las clases GuiIngresarArea, GuiIngresarAutor, GuiIngresarTipoMaterial, 
+	GuiIngresarPalabraClave que son las interfaces que permiten al usuario con perfil
+	catalogador o administrador ingresar nuevas áreas, autores, tipos de material y palabras
+	clave.\newline
+	Las clases ControladorArea, ControladorAutor, ControladorTipoMaterial, ControladorPalabraClave
+	son las clases que permiten verificar que los datos ingresados por el usuario están bien 
+	diligenciados y que se pueden ingresar al sistema. Las clases DaoAutor, DaoAreaConocimiento,
+	DaoTipoMaterial, y DaoPalabraClave son las clases que interactúan directamente con la 
+	base de datos y permite el ingreso de estos datos al sistema. La clase FachadaBD se usa
+	para crear la conexión con la base de datos.\newline
+	Finalmente las clases AreaConocimiento, Autor, TipoMaterial, PalabraClave modelan las entidades
+	Area, Autor, TipoMaterial, PalabraClave respectivamente del modelo de datos planteado, y se 
+	usan de las guis hacia abajo.}\\
+	\hline
+	\end{tabular}\\[.5cm]
+		
+	\begin{tabular}{|p{3.5cm}|p{4.5cm}|p{2.5cm}|p{4.5cm}|}\hline
+	{\bf Creado Por} & {Edgar Andrés Moncada} & {\bf Fecha} & {Abril 28 2011}\\
+	\hline
+	{\bf Actualizado por} & {María Andrea Cruz} & {\bf Fecha} & {Mayo 11 2011}\\
+	\hline
+	\end{tabular}
+
+	\begin{minipage}[c]{1\linewidth}
+	\centering
+	\includegraphics[width=21cm, height=17cm, angle=90]{diagramasClase/DiagramaClases5}
+	\end{minipage}
+			
+	%especificación detallada
+	\input{diagramasClasesGestionDocumentos.tex}	
+			
+	%-------------------------------------------------------------------------------		
+			
+	\begin{tabular}{|p{5cm}|p{11cm}|}\hline
+	{\bf Titulo} & {Diagrama de Clases Principal}\\
+	\hline
+	{\bf Descripción} & {El diagrama de clases principal reune todas las clases que le
+	dan forma al sistema, es decir, las interfaces gráficas mediante las cuales los
+	usuarios finales podrán interactuar con el sistema.\newline
+	Se incluyen las clases GuiPrincipla que es la interfaz que un usuario del sistema
+	verá en primera medida, permite realizar consultar, registrarse en el sisteam e ingresar al
+	sistema, GuiAdministrador que es la interfaz que contiene las opciones para el administrador,
+	GuiCatalogador es la interfaz para el usuario con perfil catalogador, contiene las opciones 
+	para catalogar documentos, GuiUsuarioNormal que es la interfaz que en principio tiene un 
+	usuario recien registrado al sistema y la clase ControladorVentanaPrincipal que es la clase
+	que realiza el manejo de las guis, y la verificación de un usuario que quiere ingresar al
+	sistema.\newline
+	Las clases GuiConsultarUsuarios, GuiAutenticar, GuiRegistroModificar, GuiCatalogarModificar,
+	GuiConsultaBasica, GuiConsultaAvanzada, y Usuario se usan para lograr las interfaces 
+	finales.}\\
+	\hline
+	\end{tabular}\\[.5cm]
+				
+	\begin{tabular}{|p{3.5cm}|p{4.5cm}|p{2.5cm}|p{4.5cm}|}\hline
+	{\bf Creado Por} & {Luis Felipe Vargas} & {\bf Fecha} & {Abril 28 2011}\\
+	\hline
+	{\bf Actualizado por} & {Yerminson Gonzalez} & {\bf Fecha} & {Mayo 11 2011}\\
+	\hline
+	\end{tabular}
+	
+	\begin{minipage}[c]{1\linewidth}
+	\centering
+	\includegraphics[width=20cm, height=17cm, angle=90]{diagramasClase/DiagramaClases6}
+	\end{minipage}
+			
+	%especificación detallada
+	\input{diagramasClasesPrincipal.tex}	
+	
+	%-------------------------------------------------------------------------------
+	
+\subsection{Modelo ER} 
+	\begin{minipage}[c]{1\linewidth}
+	    \centering
+        \includegraphics[width=20cm, height=17cm, angle=90]{modeloDatos}
+    \end{minipage}\\[.1cm]
+       	
+    \begin{tabular}{|p{3.5cm}|p{4.5cm}|p{2.5cm}|p{4.5cm}|}\hline
+	{\bf Creado Por} & {Yerminson Gonzalez} & {\bf Fecha} & {Abril 28 2011}\\
+	\hline
+	{\bf Actualizado por} & {Yerminson Gonzalez} & {\bf Fecha} & {Mayo 15 2011}\\
+	\hline
+	\end{tabular}
+        	
+\subsection{Diagrama de Paquetes}
+	\begin{minipage}[c]{1\linewidth}
+	    \centering
+        \includegraphics[width=19.5cm, height=17cm, angle=90]{diagramaPaquetes}
+    \end{minipage}\\[.3cm]
+       	
+    \begin{tabular}{|p{3.5cm}|p{4.5cm}|p{2.5cm}|p{4.5cm}|}\hline
+	{\bf Creado Por} & {Edgar Moncada} & {\bf Fecha} & {Mayo 14 2011}\\
+	\hline
+%	{\bf Actualizado por} & {Yerminson Gonzalez} & {\bf Fecha} & {Mayo 15 2011}\\
+%	\hline
+	\end{tabular}
+	
+\subsection{Prototipos de Interfaz de Usuario}
+\input{prototiposGui.tex}
+
+\subsection{Diagrama de Despliegue}
+\begin{minipage}{1\textwidth}
+	\centering
+	\includegraphics[scale=0.8]{diagramaDespliegue}
+\end{minipage}\\[1cm]
+
+%\end{document}
