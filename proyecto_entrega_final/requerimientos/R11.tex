@@ -1,0 +1,68 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document} %comentar hasta esta linea para incluir
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Función del requerimiento:}}
+Llevar un registro de las descargas a documentos realizadas. } & {\bf{ Estado}} & Análisis \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R11} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf {Creado por} & Cristian Ríos& \bf {Fecha } & Abril 29 2011\\
+\hline
+\bf {Actualizado por} & Cristian Ríos & \bf {Fecha }& Mayo 01 de 2011\\
+\hline
+\bf {Actualizado por} & Cristian Ríos & \bf {Fecha }& Mayo 10 2011\\
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe proporcionar la manera de poder llevar un registro de las descargas que se hagan a un documento, después de haber seleccionado algún ejemplar en una consulta y ser usuario registrado se puede llevar a cabo una descarga del documento, esto quiere decir que solo los usuarios registrados pueden descargar documentos y solo de ellos se llevara un registro.}\\
+\hline
+\bf Datos de entrada &\multicolumn{3}{p{0.675\textwidth}|}{
+El usuario no proporcionará de manera explicita datos para este requerimiento, pero para para poder llevar a cabo el registro de las descargas, cada vez que un usuario realice una descarga se proporcionará al sistema el login del usuario que realizó la descarga y el identificador del documento que descargó.}\\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{EL sistema no proporcionara datos al usuario que este realizando la descarga sobre el registro de las descargas, pero esta información es utilizada por el administrador del sistema para obtener reportes de las transacciones del sistema.} \\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema deberá realizar actualizaciones en la base de datos agregando un nuevo registro  cada vez que se realice una consulta a la tabla que mantiene la información de las descargas realizadas a documentos.} \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema.} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Usuarios registrado normal, administrador y catalogador.} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{4} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{\begin{itemize}
+        \item R07
+        \item R06
+        \item R23
+\end{itemize}} \\
+\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe de estar conectado a la base de datos y algún usuario debe de haber realizado una búsqueda, seleccionado alguna opción arrojada por la búsqueda y decido descargar el documento} \\
+\hline
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema presenta una actualización en la base de datos con respeto a la tabla que mantiene el registro de los documento  descargados al agregar un nueva nueva tupla. } \\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El requerimiento es aceptado si cada vez que algún usuario registrado realiza una descarga se mantiene información relacionada a esa descarga, por tanto es posible generar reportes.} \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document}

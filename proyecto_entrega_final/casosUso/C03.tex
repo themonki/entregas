@@ -1,0 +1,95 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\usepackage{graphicx}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%
+%\begin{document}
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+{\bf {Empresa:}} &
+\multicolumn{2}{p{0.45\textwidth}|} { Escuela de Ingeniería de Sistemas y Computación } &
+{\includegraphics[width=80.5pt]{LOGO}} \\
+\hline
+\bf {Nombre del caso de uso:}&\multicolumn{3}{l|}{
+Modificar datos usuario.
+} \\
+\hline
+\bf Código: & 
+CU03 &\bf Fecha: & 
+Abril 02 2011 \\
+\hline
+\bf Autor(es ): & 
+Edgar Andrés Moncada & 
+Yerminson Gonzalez & 
+ \\
+\hline
+\bf Descripción: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Permite la modificación de algunos datos del usuario.
+} \\
+\hline
+\bf Actores: &\multicolumn{3}{p{0.675\textwidth}|}{
+Usuario normal, Catalogador	y Administrador. 
+} \\
+\hline
+\bf Precondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+El usuario debe haberse logueado en el sistema.
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Normal}}\\
+\hline
+\multicolumn{2}{|c}{\bf Actor} & \multicolumn{2}{|c|}{\bf Sistema } \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{
+\begin{itemize}
+\item[1. ]El caso de uso inicia cuando el usuario solicita editar su perfil.
+\item[3. ]El usuario modifica los datos correspondientes de acuerdo a sus necesidades o ha una actualización de datos.
+\end{itemize}
+} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+\item[2. ]El sistema responde a través de una interfaz que muestra los campos referente a sus atributos, con los siguientes datos editables: contraseña, pregunta y respuesta secreta, nombre, apellidos, género, fecha nacimiento, nivel escolaridad, vinculo con univalle y áreas de interés. Los demás campos no son editables.
+\item[4. ]El sistema valida de que los campos obligatorios contengan datos.
+\item[5. ]El sistema accede a la base de datos y valida que los datos existentes y los nuevos datos no sean iguales cuando no pueden serlo.
+\item[6. ]El sistema accede a la base de datos, y actualiza los valores de acuerdo a los suministrados por el usuario.
+\item[7. ]El sistema responde a través de una interfaz de éxito donde muestra que se ha completado la operación.
+ \end{itemize}
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Alternativo}}\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+\item[5.1.] El Sistema al validar los datos encuentra un error debido a que  el usuario lleno de manera incorrecta alguno de los campos correspondiente a la información editable  como: contraseña, pregunta y respuesta secreta, nombre, apellidos, género, fecha nacimiento, nivel escolaridad, vinculo con Univalle y áreas de interés.
+\item[6.1.] El Sistema responde a través de una interfaz que muestra los campos referentes a los atributos para que sean llenados nuevamente, con información del error cometido.
+\end{itemize} 
+} \\
+\hline
+\bf Poscondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Atributos de usuario en la base de datos modificados.
+} \\
+\hline
+\bf Excepciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+La base de datos puede desconectarse debido a fallos de energía.
+} \\
+\hline
+\bf Aprobado por : & 
+ & \bf Fecha & 
+ \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document}

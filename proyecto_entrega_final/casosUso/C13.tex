@@ -1,0 +1,92 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\usepackage{graphicx}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%
+%\begin{document}
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+{\bf {Empresa:}} &
+\multicolumn{2}{p{0.45\textwidth}|} { Escuela de Ingeniería de Sistemas y Computación } &
+{\includegraphics[width=80.5pt]{LOGO}} \\
+\hline
+\bf {Nombre del caso de uso:}&\multicolumn{3}{l|}{
+Descargar Archivo.
+} \\
+\hline
+\bf Codigo: & 
+CU13 &\bf Fecha: & 
+Abril 02 2011 \\
+\hline
+\bf Autor(es ): & 
+Edgar Andrés Moncada & 
+ & 
+ \\
+\hline
+\bf Descripcion: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Permite a un Usuario Registrado Descargar los diferentes Documentos Digitales almacenados en el Sistema.
+} \\
+\hline
+\bf Actores: &\multicolumn{3}{p{0.675\textwidth}|}{
+Usuario Normal, Catalogador, Administrador. 
+} \\
+\hline
+\bf Precondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+El Sistema se haya iniciado.Haber realizado una consulta del Documento y seleccionado un resultado.
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Normal}}\\
+\hline
+\multicolumn{2}{|c}{\bf Actor} & \multicolumn{2}{|c|}{\bf Sistema } \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{
+\begin{itemize}
+\item[1. ]. El Usuario Registrado inicia el caso de uso al seleccionar la opción Descargar.
+\item[3.]El Usuario Registrado ingresa el nombre y selecciona el lugar donde almacenará el documento.
+\end{itemize}
+} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+\item[2.]El Sistema muestra una interfaz para seleccionar el nombre y el lugar donde se almacenara el documento.
+\item[4.]El Sistema almacena el archivo.
+\item[5. ]. El Sistema muestra una notificación de que se realizo el procedimiento correctamente y el caso de uso termina.
+\end{itemize}
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Alternativo}}\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{
+\begin{itemize}
+\item[3.1.] El Usuario no elige ningún lugar para almacenar el Documento y el caso de uso termina.
+\end{itemize}
+} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{ } \\
+\hline
+\bf Poscondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+El Sistema almacena la fecha, el tipo de usuario y el documento que fue descargado. Se almacena el Documento Digital en el formato en que se encuentra almacenado.
+} \\
+\hline
+\bf Excepciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+No se puede acceder al repositorio donde están almacenado los Documentos Digitales del Sistema.
+} \\
+\hline
+\bf Aprobado por : & 
+ & \bf Fecha & 
+ \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document}

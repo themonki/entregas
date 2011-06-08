@@ -1,0 +1,95 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\usepackage{graphicx}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%
+%\begin{document}
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+{\bf {Empresa:}} &
+\multicolumn{2}{p{0.45\textwidth}|} { Escuela de Ingeniería de Sistemas y Computación } &
+{\includegraphics[width=80.5pt]{LOGO}} \\
+\hline
+\bf {Nombre del caso de uso:}&\multicolumn{3}{l|}{
+Modificar usuarios.
+} \\
+\hline
+\bf Código: & 
+CU02 &\bf Fecha: & 
+Abril 2 2011 \\
+\hline
+\bf Autor(es ): & 
+Yerminson Gonzalez & 
+Edgar Andrés Moncada & 
+ \\
+\hline
+\bf Descripción: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Permite la modificación de usuarios , es decir alguna de la información almacenada en el sistema.
+} \\
+\hline
+\bf Actores: &\multicolumn{3}{p{0.675\textwidth}|}{
+Administrador. 
+} \\
+\hline
+\bf Precondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+El administrador debe haber consultado sobre algún usuario.
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Normal}}\\
+\hline
+\multicolumn{2}{|c}{\bf Actor} & \multicolumn{2}{|c|}{\bf Sistema } \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{
+\begin{itemize}
+\item[1. ]El caso de uso inicia cuando el administrador selecciona al usuario de la lista resultado.
+\item[3.] El administrador modifica los datos de acuerdo a sus necesidades o ha una actualización de datos.
+\end{itemize}
+} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+\item[2.] El sistema responde a través de una interfaz que muestra los campos referente a sus atributos, donde se pueden modificar el estado o el perfil de algún usuario seleccionado el dato perfil de usuario puede ser: Usuario normal, Catalogador o administrador, el dato estado puede ser: Habilitado o deshabilitado.
+\item[4. ]El sistema valida que todos los datos obligatorios se hayan suministrado.
+\item[5. ]El sistema accede a la base de datos y realiza una verificación de los datos nuevos y existentes para que no hayan datos iguales donde no pueden serlo.
+\item[6.] El sistema realiza la actualización de los datos en la base de datos con los datos suministrados según la preferencia del administrador.
+\item[7.] El sistema responde a través de una interfaz de éxito donde muestra que se ha completado la operación y el caso de uso termina.
+\end{itemize}
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Alternativo}}\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+\item[4.1.] El Sistema valida los datos y encuentra que hay errores.
+\item[4.2.] El Sistema responde a través de una interfaz que muestra los campos referentes a los atributos para que sean llenados nuevamente, con información del error cometido.
+\end{itemize}
+} \\
+\hline
+\bf Poscondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Atributos de usuario en la base de datos modificados.
+} \\
+\hline
+\bf Excepciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+La base de datos puede desconectarse debido a fallos de energía.
+} \\
+\hline
+\bf Aprobado por : & 
+ & \bf Fecha & 
+ \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document}

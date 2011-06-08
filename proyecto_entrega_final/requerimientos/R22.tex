@@ -1,0 +1,68 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document}
+%para incluir comentar hasta acá
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Función del requerimiento:}}
+Permitir la consulta avanzada de documentos. } & {\bf{ Estado}} & Análisis \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R22} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf {Creado por} & María Andrea Cruz & \bf {Fecha  } & Marzo 31 2011\\
+\hline
+\bf {Actualizado por} & María Andrea Cruz  & \bf {Fecha  }& Abril 28 2011\\
+\hline
+\bf {Actualizado por} & Cristian Ríos  & \bf {Fecha  }& Mayo 10 2011\\
+
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe permitir la consulta avanzada, donde el usuario registrado o no registrado ingresa alguno de los siguientes datos: Titulo, autor, palabra clave, tipo de documento y/o área, y como datos adicionales idioma del documento, formato del archivo y fecha de publicación.} \\
+\hline
+\bf Datos de entrada &\multicolumn{3}{p{0.675\textwidth}|}{
+El usuario que desee realizar la búsqueda deberá proporcionar alguno o todos de los siguientes datos: título del documento, autor, palabra clave, área a la que pertenece el documento, tipo de documento, idioma del documento, formato del archivo del documento y/o fecha de publicación. El dato que no sea proporcionando no será tenido en cuenta para realizar la búsqueda.}\\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe desplegar el resultado de la búsqueda en la pantalla.} \\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe realizar una consulta a la base de datos, si la consulta no es vacía desplegar el resultado como una lista en la pantalla, de lo contrario mostrar una notificación de documentos no encontrado.} \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema.} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Usuarios registrados(normal, administrador y catalogador) y no registrados.} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{5} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{\begin{itemize}
+         \item R24
+\end{itemize}} \\
+\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{Haber iniciado el sistema.} \\
+\hline
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{Una lista de documentos en la pantalla o una notificación de no encontrado el documento. } \\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El requerimiento es aceptado si cualquier usuario logra realizar consultas de documentos en la biblioteca digital especificando parámetros bien definidos.} \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document} %comentar para inlcuir

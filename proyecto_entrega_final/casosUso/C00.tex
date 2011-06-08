@@ -1,0 +1,105 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\usepackage{graphicx}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document}
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+{\bf {Empresa:}} &
+\multicolumn{2}{p{0.45\textwidth}|} { Escuela de Ingeniería de Sistemas y Computación } &
+{\includegraphics[width=80.5pt]{LOGO}} \\
+\hline
+\bf {Nombre del caso de uso:}&\multicolumn{3}{l|}{
+Registro de Usuario.
+} \\
+\hline
+\bf Código: & 
+CU00 &\bf Fecha: & 
+Abril 03 2011 \\
+\hline
+\bf Autor(es ): & 
+Edgar Andrés Moncada & 
+Yerminson Gonzalez & 
+ \\
+\hline
+\bf Descripción: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Permite el registro al sistema de nuevos usuarios.
+} \\
+\hline
+\bf Actores: &\multicolumn{3}{p{0.675\textwidth}|}{
+Usuario No Registrado. 
+} \\
+\hline
+\bf Precondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+El sistema debe de haberse iniciado.
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Normal}}\\
+\hline
+\multicolumn{2}{|c}{\bf Actor} & \multicolumn{2}{|c|}{\bf Sistema } \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{
+\begin{itemize}
+\item [1.]El caso de uso inicia cuando el usuario no registrado selecciona la opción de registrarse.
+\item [3.] El usuario digita los campos pedidos.
+\item[4.] El usuario le indica al sistema que valide los datos.
+\end{itemize}
+} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+\item[2.] El sistema genera una interfaz que le pide al usuario los siguientes datos obligatorios: login, contraseña, verificación de la contraseña, pregunta y respuesta secreta, nombre. A demás pide los siguientes datos que no son obligatorios: apellidos, género, fecha de nacimiento, email, nivel de escolaridad, vinculo con Univalle (estudiante de pregrado, de posgrado, egresado, profesor activo, jubilado, ninguno). Se pide información sobre las aéreas de interés.
+\item[5.] El Sistema valida que el login no exista.
+\item[6.] El Sistema valida que los campos de contraseña y verificación de contraseña.
+ El sistema valida los campos digitados.
+\item[7.] El sistema crea una nueva instancia del usuario en la base de datos.
+\item[8.] El sistema envía un mensaje de confirmación al usuario y el caso de uso termina.
+\end{itemize}
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Alternativo}}\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{
+\begin{itemize}
+\item[3.3.] El Usuario no digita ninguno de los campos obligatorios.
+\item[4.3.] El Usuario le indica al Sistema que valide los datos.
+\end{itemize}
+} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+\item[5.1.] El Sistema al validar se da cuenta que el login digitado por el Usuario ya existe.
+\item[6.1. ]El Sistema envía una notificación al usuario indicándole que ingrese un nuevo login.
+\item[6.2. ]El Sistema al validar se da cuenta que el campo de contraseña y el campo de verificación de contraseña no son iguales.
+\item[7.2. ]El Sistema envía una notificación al Usuario indicándole que las contraseñas no coinciden y que las vuelva a confirmar.
+\item[5.3. ]El Sistema al validar se da cuenta que los campos obligatorios no tienen datos.
+\item[6.3.] El Sistema envía una notificación al Usuario indicándole que vuelva a confirmar.
+\end{itemize}
+} \\
+\hline
+\bf Poscondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+El sistema almacena los datos del usuario en la base de datos.
+} \\
+\hline
+\bf Excepciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+El sistema no puede acceder a la base de datos y no puede almacenar los datos.
+} \\
+\hline
+\bf Aprobado por : & 
+ & \bf Fecha & 
+ \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document}

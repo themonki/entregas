@@ -1,0 +1,70 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document} %comentar hasta esta linea para incluir
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Función del requerimiento:}}
+Reactivar usuario Eliminado. } & {\bf{ Estado}} & Análisis \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R12} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf {Creado por} & Cristian Ríos& \bf {Fecha } & Abril 28 2011\\
+\hline
+\bf {Actualizado por} & Cristian Ríos & \bf {Fecha  }& Abril 30 2011\\
+\hline
+\bf {Actualizado por} & Cristian Ríos & \bf {Fecha  }& Mayo 10 2011\\
+
+
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe permitir a los usuarios administradores una opción que permita reactivar a un usuario que a sido eliminado con anterioridad, esto es, cambiar el estado del usuario a ‘habilitado’ lo que le permitirá ingresar de nuevo al sistema y obtener nuevamente sus funcionalidades dentro del mismo. Los usuarios que se desea reactivar se seleccionan a partir de una lista creada por una consulta a la base de datos que muestre el o los posibles
+usuarios a inactivos, candidatos a ser reactivados.} \\
+\hline
+\bf Datos de entrada &\multicolumn{3}{p{0.675\textwidth}|}{
+Para poder cambiar de estado a un usuario se presentan al administrador todos los datos del usuario a modificar de manera informativa para verificar la identidad del usuario. El administrador debe de proporcionar el dato estado con el que se le realizará la actualización al usuario.}\\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema genera y muestra un mensaje de confirmación preguntando al administrador si está totalmente seguro de realizar dicha operación, de ser así, genera y muestra un mensaje informando del éxito o no de la operación solicitada.} \\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema deberá realizar una actualización del estado del usuario o los usuarios reactivados en la base de datos.} \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema.} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Administrador} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{3} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{\begin{itemize}
+        \item R06
+        \item R01
+        \item R04
+\end{itemize}} \\
+\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe estar conectado a la base de datos , un administrador debe estar logueado para poder tener acceso a la interfaz de reactivación de usuarios proporcionada por el sistema.} \\
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema en caso de tener éxito en la acción reactivar, actualiza en su base de datos los registros de los usuarios indicados para ser reactivados , por lo cual, el usuario podrá ingresar nuevamente al sistema. } \\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El requerimiento es aceptado si un usuario administrador puede buscar posibles usuarios a reactivar y de estos seleccionar los que desee para posteriormente reactivarlos en el sistema, además, el usuario reactivado ahora le será posible ingresar nuevamente al sistema. } \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document}

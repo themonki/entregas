@@ -1,0 +1,99 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\usepackage{graphicx}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%
+%\begin{document}
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+{\bf {Empresa:}} &
+\multicolumn{2}{p{0.45\textwidth}|} { Escuela de Ingeniería de Sistemas y Computación } &
+{\includegraphics[width=80.5pt]{LOGO}} \\
+\hline
+\bf {Nombre del caso de uso:}&\multicolumn{3}{l|}{
+Ingresar Autor.
+} \\
+\hline
+\bf Código: & 
+CU09 &\bf Fecha: & 
+Abril 02 2011 \\
+\hline
+\bf Autor(es ): & 
+Yerminson Gonzalez & 
+Cristian Ríos & 
+ \\
+\hline
+\bf Descripción: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Permite la creación de nuevos autores en el Sistema.
+} \\
+\hline
+\bf Actores: &\multicolumn{3}{p{0.675\textwidth}|}{
+Administrador, Catalogador. 
+} \\
+\hline
+\bf Precondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Tener el perfil de usuario Administrador o catalogador.
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Normal}}\\
+\hline
+\multicolumn{2}{|c}{\bf Actor} & \multicolumn{2}{|c|}{\bf Sistema } \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{
+\begin{itemize}
+\item[1. ]El caso de uso inicia cuando el Usuario solicita crear un nuevo autor
+\item[3.] El Usuario ingresa datos en los campos proporcionado por la interfaz del sistema para creación de nuevos autores.
+\item[4. ]El Usuario indica al Sistema que ya a ingresado los datos y que desea crear el nuevo autor.
+\item[7.] El Usuario acepta el mensaje de confirmación generado por el sistema y el caso de uso finaliza.
+\end{itemize}
+} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+\item[2.]El Sistema responde mostrando una interfaz con cinco campos: identificación del autor, nombre, apellido, correo electrónico y el acrónimo.
+\item[5.]El Sistema valida que la identificación del autor que a ingresado el usuario para el nuevo autor no exista como identificación de otro autor.
+\item[6. ] El Sistema crea un nuevo autor en el sistema y responde con un mensaje al usuario indicando el éxito de la operación. 
+\end{itemize}
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Alternativo}}\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{
+\begin{itemize}
+\item[7.1.] El Usuario acepta el mensaje de notificación del error generado por el sistema.
+\end{itemize}
+} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+\item[5.1.] El sistema valida  los datos y en cuenta un error en los campos que han sido diligenciados por el Usuario tales como: nombre, apellido, correo electrónico y el acrónimo.
+\item[6.1.] El sistema envía un mensaje notificando del error a la hora de llenar los campos.
+\end{itemize}
+} \\
+\hline
+\bf Poscondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+El Sistema crea una nueva tupla de la base de datos correspondiente a la nueva área de ciencias de la computación.
+} \\
+\hline
+\bf Excepciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+El Sistema no puede acceder a la base de datos y no puede crear la nueva tupla o realizar las consultas para las validaciones de los datos.
+} \\
+\hline
+\bf Aprobado por : & 
+ & \bf Fecha & 
+ \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document}

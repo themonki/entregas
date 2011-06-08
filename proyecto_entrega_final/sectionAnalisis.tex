@@ -1,0 +1,378 @@
+%\documentclass[11pt]{article}
+%\usepackage[utf8]{inputenc}
+%\usepackage[spanish]{babel}
+%\usepackage[]{graphicx}
+%\usepackage{colortbl} %para las tablas
+%\usepackage{longtable} %para las tablas
+%\usepackage{geometry}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%
+%\begin{document}
+
+La siguiente es la estructura que se seguirá para cada iteración:
+\begin{enumerate}
+        \item Análisis de Requerimientos del Sistema.
+        \item Creación y Modificación de los diferentes Artefactos.
+        \item Implementación.
+\end{enumerate}
+        \subsection{Descripción de subsistema}
+        Para cada una de las iteraciones se debe tener en cuenta:
+        \begin{enumerate}
+                \item El mejoramiento de los requisitos planteados, ya sea su adición, eliminación
+                y/o modificación para que cumplan con los objetivos principales del sistema:
+                Gestión de usuarios, Catalogación de Documentos, Consultas de usuarios y reportes.
+                Esto se debe realizar para cada uno de los entregables establecidos en la sección
+                de requerimientos. Es fundamental que cada uno de los integrantes del grupo de
+                desarrolladores y los representantes del proyecto participen de dicho proceso.
+             
+                \item El mejoramiento de los artefactos y la adición de nuevos para cada uno de los
+                entregables estipulados en las fechas de entrega. Se repartirán entre los
+                diferentes integrantes la creación de los artefactos y en el mejoramiento de estos
+                deberán participar todos los integrantes del equipo de desarrollo.
+                
+                \item La Implementación se realizará al finalizar el proceso de desarrollo en el
+                último entregable con la particiación de los integrantes del grupo de 
+                desarrolladores.
+        \end{enumerate}
+        
+        %*********************************************************************       
+        \subsection{Diagramas de caso de uso}
+    		\input{diagramasCasosUso.tex}    
+	      
+        
+        \newpage                
+             \subsubsection{Especificación de casos de uso}
+                \input{casosUso/C00.tex}
+                %%\pagebreak
+                        
+                \input{casosUso/C01.tex}
+                 %%\pagebreak
+                        
+                 \input{casosUso/C02.tex}
+                 %%\pagebreak
+                        
+                  \input{casosUso/C03.tex}
+                  %%\pagebreak        
+                       
+                  \input{casosUso/C04.tex}
+                  %\pagebreak                                
+                        
+                  \input{casosUso/C05.tex}
+                  %\pagebreak
+                        
+                  \input{casosUso/C06.tex}
+                  %\pagebreak
+                        
+                  \input{casosUso/C07.tex}
+                  %\pagebreak        
+                       
+                  \input{casosUso/C08.tex}
+                  %\pagebreak        
+                        
+                  \input{casosUso/C09.tex}
+                  %\pagebreak                        
+                        
+                  \input{casosUso/C10.tex}
+                  %\pagebreak
+                        
+                  \input{casosUso/C11.tex}
+                  %\pagebreak
+                        
+                  \input{casosUso/C12.tex}
+                  %\pagebreak
+                      
+                  \input{casosUso/C13.tex}
+                  %\pagebreak
+                  
+                  \input{casosUso/C14.tex}
+                  %\pagebreak  
+		%****************************************************************
+		
+			\subsubsection{Diagramas de Secuencia}
+			
+				\begin{minipage}[c]{1\linewidth}
+				\centering
+    			\includegraphics[width=20cm, height=15cm, angle=90]
+    			{diagramasSecuencia/AutenticarUsuario}\\[0.5cm]
+    			
+    			\begin{tabular}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}
+    			|p{0.225\textwidth}|}
+			    \hline
+			    {\bf Titulo} & 
+			    \multicolumn{3}{p{0.675\textwidth}|}{Diagrama de secuencia Autenticar Usuario}\\
+			    \hline
+			    \hline
+			    {\bf Creador por} & {María Andrea Cruz} & {\bf Fecha} & {Mayo 13 2011}\\
+			    \hline
+			    \end{tabular}
+			    \end{minipage}
+			    
+			%--------------------------------------------------------------------
+			
+				\begin{minipage}[c]{1\linewidth}
+				\centering
+    			\includegraphics[width=20cm, height=17cm, angle=90]
+    			{diagramasSecuencia/Catalogar}\\[0.5cm]
+    			
+    			\begin{tabular}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}
+    			|p{0.225\textwidth}|}
+			    \hline
+			    {\bf Titulo} & 
+			    \multicolumn{3}{p{0.675\textwidth}|}{Diagrama de secuencia Catalogar}\\
+			    \hline
+			    \hline
+			    {\bf Creador por} & {Cristian Ríos} & {\bf Fecha} & {Mayo 13 2011}\\
+			    \hline
+			    \end{tabular}
+			    \end{minipage}
+			    
+			%--------------------------------------------------------------------
+			
+				\begin{minipage}[c]{1\linewidth}
+				\centering
+    			\includegraphics[width=20cm, height=17cm, angle=90]
+    			{diagramasSecuencia/ConsultaGeneral}\\[0.5cm]
+    			
+    			\begin{tabular}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}
+    			|p{0.225\textwidth}|}
+			    \hline
+			    {\bf Titulo} & 
+			    \multicolumn{3}{p{0.675\textwidth}|}{Diagrama de secuencia Consulta General}\\
+			    \hline
+			    \hline
+			    {\bf Creador por} & {Cristian Ríos} & {\bf Fecha} & {Mayo 14 2011}\\
+			    \hline
+			    \end{tabular}
+			    \end{minipage}
+			    
+			 %--------------------------------------------------------------------
+			
+				\begin{minipage}[c]{1\linewidth}
+				\centering
+    			\includegraphics[width=18cm, height=17cm, angle=90]
+    			{diagramasSecuencia/ConsultarUsuarios}\\[0.5cm]
+    			
+    			\begin{tabular}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}
+    			|p{0.225\textwidth}|}
+			    \hline
+			    {\bf Titulo} & 
+			    \multicolumn{3}{p{0.675\textwidth}|}{Diagrama de secuencia Consultar Usuarios}\\
+			    \hline
+			    \hline
+			    {\bf Creador por} & {Cristian Ríos} & {\bf Fecha} & {Mayo 15 2011}\\
+			    \hline
+			    \end{tabular}
+			    \end{minipage}
+			    
+			 %--------------------------------------------------------------------
+			
+				\begin{minipage}[c]{1\linewidth}
+				\centering
+    			\includegraphics[width=20cm, height=17cm, angle=90]
+    			{diagramasSecuencia/ConsultasAvanzadas}\\[0.5cm]
+    			
+    			\begin{tabular}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}
+    			|p{0.225\textwidth}|}
+			    \hline
+			    {\bf Titulo} & 
+			    \multicolumn{3}{p{0.675\textwidth}|}{Diagrama de secuencia Consulta Avanzada}\\
+			    \hline
+			    \hline
+			    {\bf Creador por} & {Cristian Ríos} & {\bf Fecha} & {Mayo 14 2011}\\
+			    \hline
+			    \end{tabular}
+			    \end{minipage}
+			    
+			  %--------------------------------------------------------------------
+			
+				\begin{minipage}[c]{1\linewidth}
+				\centering
+    			\includegraphics[width=14cm, height=16cm]
+    			{diagramasSecuencia/DescargarArchivo}\\[0.5cm]
+    			
+    			\begin{tabular}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}
+    			|p{0.225\textwidth}|}
+			    \hline
+			    {\bf Titulo} & 
+			    \multicolumn{3}{p{0.675\textwidth}|}{Diagrama de secuencia Descargar Archivo}\\
+			    \hline
+			    \hline
+			    {\bf Creador por} & {María Andrea Cruz} & {\bf Fecha} & {Mayo 16 2011}\\
+			    \hline
+			    \end{tabular}
+			    \end{minipage}
+			    
+			 %--------------------------------------------------------------------
+			
+				\begin{minipage}[c]{1\linewidth}
+				\centering
+    			\includegraphics[width=20cm, height=17cm, angle=90]
+    			{diagramasSecuencia/EditarDocumento}\\[0.5cm]
+    			
+    			\begin{tabular}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}
+    			|p{0.225\textwidth}|}
+			    \hline
+			    {\bf Titulo} & 
+			    \multicolumn{3}{p{0.675\textwidth}|}{Diagrama de secuencia Editar Documento}\\
+			    \hline
+			    \hline
+			    {\bf Creador por} & {Cristian Ríos} & {\bf Fecha} & {Mayo 14 2011}\\
+			    \hline
+			    \end{tabular}
+			    \end{minipage}
+			    
+			 %--------------------------------------------------------------------
+			
+				\begin{minipage}[c]{1\linewidth}
+				\centering
+    			\includegraphics[width=18cm, height=17cm, angle=90]
+    			{diagramasSecuencia/GenerarReporte}\\[0.5cm]
+    			
+    			\begin{tabular}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}
+    			|p{0.225\textwidth}|}
+			    \hline
+			    {\bf Titulo} & 
+			    \multicolumn{3}{p{0.675\textwidth}|}{Diagrama de secuencia Generar Reportes}\\
+			    \hline
+			    \hline
+			    {\bf Creador por} & {María Andrea Cruz} & {\bf Fecha} & {Mayo 16 2011}\\
+			    \hline
+			    \end{tabular}
+			    \end{minipage}
+			    
+			 %--------------------------------------------------------------------
+			
+				\begin{minipage}[c]{1\linewidth}
+				\centering
+    			\includegraphics[width=21cm, height=17cm, angle=90]
+    			{diagramasSecuencia/IngresarArea}\\[0.5cm]
+    			
+    			\begin{tabular}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}
+    			|p{0.225\textwidth}|}
+			    \hline
+			    {\bf Titulo} & 
+			    \multicolumn{3}{p{0.675\textwidth}|}{Diagrama de secuencia Ingresar Área}\\
+			    \hline
+			    \hline
+			    {\bf Creador por} & {Luis Felipe Vargas} & {\bf Fecha} & {Mayo 15 2011}\\
+			    \hline
+			    \end{tabular}
+			    \end{minipage}
+			    
+			 %--------------------------------------------------------------------
+			
+				\begin{minipage}[c]{1\linewidth}
+				\centering
+    			\includegraphics[width=21cm, height=17cm, angle=90]
+    			{diagramasSecuencia/IngresarAutor}\\[0.5cm]
+    			
+    			\begin{tabular}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}
+    			|p{0.225\textwidth}|}
+			    \hline
+			    {\bf Titulo} & 
+			    \multicolumn{3}{p{0.675\textwidth}|}{Diagrama de secuencia Ingresar Autor}\\
+			    \hline
+			    \hline
+			    {\bf Creador por} & {Luis Felipe Vargas} & {\bf Fecha} & {Mayo 15 2011}\\
+			    \hline
+			    \end{tabular}
+			    \end{minipage}
+			    
+			 %--------------------------------------------------------------------
+			
+				\begin{minipage}[c]{1\linewidth}
+				\centering
+    			\includegraphics[width=21cm, height=17cm, angle=90]
+    			{diagramasSecuencia/IngresarPalabrasClave}\\[0.5cm]
+    			
+    			\begin{tabular}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}
+    			|p{0.225\textwidth}|}
+			    \hline
+			    {\bf Titulo} & 
+			    \multicolumn{3}{p{0.675\textwidth}|}{Diagrama de secuencia Ingresar Palabras Claves}\\
+			    \hline
+			    \hline
+			    {\bf Creador por} & {Luis Felipe Vargas} & {\bf Fecha} & {Mayo 15 2011}\\
+			    \hline
+			    \end{tabular}
+			    \end{minipage}
+			    
+			 %--------------------------------------------------------------------
+			
+				\begin{minipage}[c]{1\linewidth}
+				\centering
+    			\includegraphics[width=21cm, height=17cm, angle=90]
+    			{diagramasSecuencia/IngresarTipoMaterial}\\[0.5cm]
+    			
+    			\begin{tabular}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}
+    			|p{0.225\textwidth}|}
+			    \hline
+			    {\bf Titulo} & 
+			    \multicolumn{3}{p{0.675\textwidth}|}{Diagrama de secuencia Ingresar Tipo de Material}\\
+			    \hline
+			    \hline
+			    {\bf Creador por} & {Luis Felipe Vargas} & {\bf Fecha} & {Mayo 15 2011}\\
+			    \hline
+			    \end{tabular}
+			    \end{minipage}
+			    
+			 %--------------------------------------------------------------------
+			
+				\begin{minipage}[c]{1\linewidth}
+				\centering
+    			\includegraphics[width=19cm, height=17cm, angle=90]
+    			{diagramasSecuencia/ModificarUsuario}\\[0.5cm]
+    			
+    			\begin{tabular}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}
+    			|p{0.225\textwidth}|}
+			    \hline
+			    {\bf Titulo} & 
+			    \multicolumn{3}{p{0.675\textwidth}|}{Diagrama de secuencia Modificar Usuarios}\\
+			    \hline
+			    \hline
+			    {\bf Creador por} & {María Andrea Cruz} & {\bf Fecha} & {Mayo 14 2011}\\
+			    \hline
+			    \end{tabular}
+			    \end{minipage}
+			    
+			 %--------------------------------------------------------------------
+			
+				\begin{minipage}[c]{1\linewidth}
+				\centering
+    			\includegraphics[width=21cm, height=17cm, angle=90]
+    			{diagramasSecuencia/ModificarDatos}\\[0.5cm]
+    			
+    			\begin{tabular}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}
+    			|p{0.225\textwidth}|}
+			    \hline
+			    {\bf Titulo} & 
+			    \multicolumn{3}{p{0.675\textwidth}|}{Diagrama de secuencia Modificar Datos de Usuario}\\
+			    \hline
+			    \hline
+			    {\bf Creador por} & {Cristian Ríos} & {\bf Fecha} & {Mayo 15 2011}\\
+			    \hline
+			    \end{tabular}
+			    \end{minipage}
+			    
+			 %--------------------------------------------------------------------
+			
+				\begin{minipage}[c]{1\linewidth}
+				\centering
+    			\includegraphics[width=21cm, height=17cm, angle=90]
+    			{diagramasSecuencia/RegistroUsuario}\\[0.5cm]
+    			
+    			\begin{tabular}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}
+    			|p{0.225\textwidth}|}
+			    \hline
+			    {\bf Titulo} & 
+			    \multicolumn{3}{p{0.675\textwidth}|}{Diagrama de secuencia Registrar Usuario}\\
+			    \hline
+			    \hline
+			    {\bf Creador por} & {Cristian Ríos} & {\bf Fecha} & {Mayo 15 2011}\\
+			    \hline
+			    \end{tabular}
+			    \end{minipage}
+			    
+			 
+			
+%\end{document}

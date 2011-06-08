@@ -1,0 +1,66 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document}
+%para incluir comentar hasta acá
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Función del requerimiento:}}
+Almacenar nuevas áreas de interés con sus respectivas subáreas. } & {\bf{ Estado}} & Análisis \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R18} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf {Creado por} & Maria Andrea Cruz & \bf {Fecha } & Marzo 31 2011\\
+\hline
+\bf {Actualizado por} & Cristian Ríos & \bf {Fecha }& Abril 28 2011\\
+\hline
+\bf {Actualizado por} & Cristian Ríos & \bf {Fecha }& Mayo 10 2011\\
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{ El sistema debe proporcionar la manera de poder almacenar en el sistema una lista con las áreas y subáres de las ciencias de la computación que estarán disponibles. Para crear  una nueva área se debe de indicar cual es su área padre si la área que se esta creando es una subárea, su nombre  y una descripción de esta. Esta operación solo podrá ser realizada por usuarios administradores o catalogadores.} \\
+\hline
+\bf Datos de entrada &\multicolumn{3}{p{0.675\textwidth}|}{
+EL usuario que esté creando una nueva área de ciencias de la computación debe de proporcionar el nombre del área, una descripción de esta y un área padre, si el área que se esta creando no es una subárea, se indica como área padre a la área super.}\\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{ El sistema generará un mensaje notificando al usuario del éxito o no de la operación realizada, si fue exitosa indicará que área fue creada y si esta es un subárea indicará quien es su respectiva área padre.} \\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{ El sistema deberá realizar un cambio en la base de datos, agregando nuevos registros en la tabla que mantiene la información de las áreas de las ciencias de la computación.} \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema.} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Catalogador, administrador.} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{5} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{ \begin{itemize}
+        \item R08
+\end{itemize} } \\
+\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe estar conectado a la base de datos, la área que se trata de crear no debe de existir no debe de existir y si se va a crear una subárea, el área padre debe de haber sido creada con anticipación. El usuario que ha ingresado al sistema debe de tener como perfil administrador o catalogador.}\\
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema en su base de datos tiene una descripción más detallada y amplia de las áreas respecto a ciencias de la computación, áreas que podrán ser asociadas con algún documento facilitando la recuperación de documentos mediante este criterio de búsqueda.} \\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El requerimiento es aceptado si un usuario administrador o catalogador ingresa al sistema y tiene la opción de poder crear nuevas áreas o subáreas y además, estas áreas deben de poder ser seleccionadas a la hora de adicionar datos a los documentos ingresados al sistema.} \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document} %comentar para inlcuir

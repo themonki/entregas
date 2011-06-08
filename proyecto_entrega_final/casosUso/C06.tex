@@ -1,0 +1,103 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\usepackage{graphicx}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%
+%\begin{document}
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+{\bf {Empresa:}} &
+\multicolumn{2}{p{0.45\textwidth}|} { Escuela de Ingeniería de Sistemas y Computación } &
+{\includegraphics[width=80.5pt]{LOGO}} \\
+\hline
+\bf {Nombre del caso de uso:}&\multicolumn{3}{l|}{
+Catalogar.
+} \\
+\hline
+\bf Código: & 
+CU06 &\bf Fecha: & 
+Abril 02 2011 \\
+\hline
+\bf Autor(es ): & 
+Yerminson Gonzalez & 
+ & 
+ \\
+\hline
+\bf Descripción: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Permite la creación de un nuevo registro para un documento mediante su adecuada catalogacion es decir proporcionando los datos adecuados para su identificación y futura consulta.
+} \\
+\hline
+\bf Actores: &\multicolumn{3}{p{0.675\textwidth}|}{
+Catalogador. 
+} \\
+\hline
+\bf Precondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Haber ingresado al sistema y tener perfil de catalogador.
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Normal}}\\
+\hline
+\multicolumn{2}{|c}{\bf Actor} & \multicolumn{2}{|c|}{\bf Sistema } \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{
+\begin{itemize}
+\item[1.] El caso de uso inicia cuando el catalogador le solicita al sistema que permita catalogar un documento.
+\item[3. ]El catalogador llena los campos correspondientes de acuerdo a la información que muestra el libro haciendo uso del listado que presenta algunos campos y otros que si se llenan mediante la especificación escrita del dato.  
+\item[4. ]El catalogador solicita que sean verificados los datos al sistema al intentar guardar la información suministrada.
+\item[7. ]El catalogador acepta el mensaje de éxito y así termina este caso de uso.
+\end{itemize}
+} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+\item[ 2.] El sistema le responde enviando una interfaz con los campos correspondientes a la información que se requiere para poder crear un nuevo registro de documento , los campos son: Tipo de material, número de identificación, título principal, título secundario y/o traducido, editorial, fecha publicación, fecha  catalogación, Fecha creación, Idioma, derechos de autor y una breve descripción o resumen del material.
+\item[5.] El sistema valida los datos suministrados a través de la interfaz.
+\item[6.] El sistema responde mostrando un mensaje de éxito que indica que la operación de registro del nuevo documento se llevo con éxito.
+\end{itemize}
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Alternativo}}\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{
+\begin{itemize}
+\item[4.2.] El Catalogador le indica al Sistema que desea suspender el registro del documento (para registrar una nueva área y/o autor).
+\item[6.2.1.] El Catalogador le indica al Sistema que si desea salir.
+\item[6.2.2.] El Catalogador le indica al Sistema que no desea salir y se continua el caso de uso en el flujo normal en 3.
+\end{itemize}
+} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+ \item[5.1.] El Sistema al validar los datos encuentra errores.
+\item[6.1. ]El Sistema responde enviando un mensaje de error informando que alguno de los campos no se ha llenado de manera correcta y que debe ser corregido.
+\item[5.2. ]El Sistema envía un mensaje de confirmación que indica si desea salir del proceso de registro.
+\item[7.2.1.] El Sistema le informa que se ha cancelado el proceso y el caso de uso termina. 
+\end{itemize}
+} \\
+\hline
+\bf Poscondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+El sistema añade un registro correspondiente a un nuevo documento.
+} \\
+\hline
+\bf Excepciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Fallo de conexionen la base de datos. Falla en el sistema de suministro de energía.
+} \\
+\hline
+\bf Aprobado por : & 
+ & \bf Fecha & 
+ \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document}

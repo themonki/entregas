@@ -1,0 +1,68 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document}
+%para incluir comentar hasta acá
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Función del requerimiento:}}
+Modificar datos de usuario. } & {\bf{ Estado}} & Análisis \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R03} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf {Creado por} & María Andrea Cruz & \bf {Fecha } & Marzo 31 2011\\
+\hline
+\bf {Actualizado por} &  Cristian Ríos & \bf {Fecha  }& Abril 28 2011\\
+\hline
+\bf {Actualizado por} &  Cristian Ríos & \bf {Fecha  }& Mayo 09 2011\\
+
+
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{ El sistema debe proporcionar una opción que permita a cada usuario registrado en el sistema modificar los datos de su perfil, a excepción de su login.  Para saber el estado actual de los datos y cuales de estos modificar se realiza una consulta a la base de datos que le informa el contenido actual de cada uno de sus campos.} \\
+\hline
+\bf Datos de entrada &\multicolumn{3}{p{0.675\textwidth}|}{
+Al usuario que intenta modificar sus datos en el sistema se le presentan todos sus datos actuales, que pueden ser cambiados a excepción de su login, nuevamente como al registrarse debe de proporcionar estos datos, el dato que no sea modificado tomará el valor que actualmente tiene.}\\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{ Se genera un mensaje de notificación informando al usuario del éxito o no de la operación} \\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema deberá realizar una actualización en la base de datos con nueva información actualizada y correcta del usuario que solicito esta funcionalidad.} \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema.} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Catalogador, administrador y usuarios normales.} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{3} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{\begin{itemize}
+        \item R06
+\end{itemize} } \\
+\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe estar conectado a la base de datos de la misma manera debe de haber reconocido a un usuario normal es decir este debe de estar logueado y estar observando su determinada interfaz correspondiente a su perfil.} \\
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema en la base de datos tiene información actualizada de acuerdo a la los datos que modifico el usuario. Lo que permite una mejor comunicación sistema usuario.} \\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El requerimiento es aceptado si cada usuario logra modificar sus datos de usuario que mantiene el sistema.} \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document} %comentar para inlcuir

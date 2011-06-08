@@ -1,0 +1,70 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document}
+%para incluir comentar hasta acá
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Función del requerimiento:}}
+Mostrar ficha técnica de un documento. } & {\bf{ Estado}} & Análisis \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R25} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf {Creado por} & María Andrea Cruz & \bf {Fecha} & Marzo 31 2011\\
+\hline
+\bf {Actualizado por} & María Andrea Cruz & \bf {Fecha }& Abril 28 2011\\
+\hline
+\bf {Actualizado por} & Cristian Ríos  & \bf {Fecha }& Mayo 10 2011\\
+
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe permitir mostrar la ficha técnica de un documento, esta debe tener todos los datos relacionados con el documento estos son: tipo de material, título principal, título secundario y/o traducido, editorial, fecha de publicación, Idioma, derechos de autor, resumen, autor, palabras clave, áreas a la que pertenece, formato del archivo.} \\
+\hline
+\bf Datos de entrada &\multicolumn{3}{p{0.675\textwidth}|}{
+El usuario al solicitar una búsqueda se genera una lista de documento autor con los posibles documentos encontrados, cuando uno de los elementos de la lista es seleccionado esto proporcionará el identificador del documento al sistema con lo que será posible crear la ficha técnica del documento.}\\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema muestra en pantalla el conjunto de datos correspondientes al documento.} \\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema deberá desplegar la ficha técnica del documento, consultando a la base de datos todos los datos relacionados al documento. El desplegar la ficha técnica se toma como consulta, el sistema actualizará la base de datos para llevar este registro} \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema.} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Usuarios registrados normales, catalogador y administrador y usuarios no registrados,.} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{3} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{\begin{itemize}
+\item R21
+\item R22
+\item R24
+\item R10
+\end{itemize}} \\
+\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{Haber seleccionado un documento de la lista de documentos que despliega el resultado de una consulta.} \\
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{Ficha técnica del documento desplegada en pantalla. } \\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El requerimiento es aceptado si el usuario ve en pantalla una ficha técnica con datos del documento seleccionado.} \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document} %comentar para inlcuir

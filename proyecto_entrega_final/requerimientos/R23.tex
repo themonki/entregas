@@ -1,0 +1,69 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document}
+%para incluir comentar hasta acá
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Función del requerimiento:}}
+Permitir la descarga de documentos. } & {\bf{ Estado}} & Análisis \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R23} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf {Creado por} & María Andrea Cruz & \bf {Fecha  } & Marzo 31 2011\\
+\hline
+\bf {Actualizado por} & María Andrea   & \bf {Fecha   }& Abril 28 2011\\
+\hline
+\bf {Actualizado por} & Cristian Ríos   & \bf {Fecha   }& Mayo 10 2011\\
+
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe permitir la descarga de documentos, esta descarga puede ser realizada solo por usuarios registrados.} \\
+\hline
+\bf Datos de entrada &\multicolumn{3}{p{0.675\textwidth}|}{
+El usuario que desee descargar el documento previamente realizó una búsqueda de este, y al encontrarlo lo seleccionó, de esta manera el usuario proporciona el identificador del documento a descargar.}\\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema muestra un cuadro de dialogo al usuario donde se pregunta por la dirección en el equipo cliente donde quedará el documento, y presenta una notificación de descarga. El usuario ahora tendrá una copia del documento} \\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe verificar el documento que se descarga y el usuario que lo descarga para llevar el registro de la descarga en la base de datos. El sistema debe descargar en la ruta indicada el documento que solicita descargar el usuario.} \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema.} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Usuarios Registrados, catalogadores, administrador y usuarios normales.} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{5} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{\begin{itemize}
+\item R6
+\item R11
+\end{itemize}} \\
+\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{Tener la ficha técnica del documento específico desplegada en pantalla y el usuario debe haberse logueado en el sistema.} \\
+\hline
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{Un cuadro de dialogo solicitando dirección donde se guardará el documento, una notificación de descarga y el usuario con una copia del documento. } \\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El criterio es aceptado cuando se descarguen correctamente los documentos en la ruta indicada por el usuario registrado.} \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document} %comentar para inlcuir

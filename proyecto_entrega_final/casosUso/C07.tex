@@ -1,0 +1,99 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\usepackage{graphicx}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%
+%\begin{document}
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+{\bf {Empresa:}} &
+\multicolumn{2}{p{0.45\textwidth}|} { Escuela de Ingeniería de Sistemas y Computación } &
+{\includegraphics[width=80.5pt]{LOGO}} \\
+\hline
+\bf {Nombre del caso de uso:}&\multicolumn{3}{l|}{
+Ingresar palabras clave.
+} \\
+\hline
+\bf Código: & 
+CU07 &\bf Fecha: & 
+Abril 02 2011 \\
+\hline
+\bf Autor(es ): & 
+Yerminson Gonzalez & 
+ & 
+ \\
+\hline
+\bf Descripción: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Permite la creación de nuevas palabras claves en caso de que se requiera para registro de un documento y que den información sobre el tema que trata este documento.
+} \\
+\hline
+\bf Actores: &\multicolumn{3}{p{0.675\textwidth}|}{
+Administrador y Catalogador. 
+} \\
+\hline
+\bf Precondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Haber ingresado al sistema y tener perfil de catalogador o administrador.
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Normal}}\\
+\hline
+\multicolumn{2}{|c}{\bf Actor} & \multicolumn{2}{|c|}{\bf Sistema } \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{
+\begin{itemize}
+\item[1. ]El caso de uso inicia cuando el catalogador solicita crear una nueva palabra clave sobre un documento relacionado con las ciencias de la computación.
+\item[3.] El catalogador ingresa datos en los campos proporcionado por la interfaz del sistema para creación de nuevas palabras claves.
+\item[4. ]El catalogador indica al sistema que ya a ingresado los datos y que desea crear la nueva área.
+\item[7. ]El acepta el mensaje de confirmación generado por el sistema y el caso de uso finaliza.
+\end{itemize}
+} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+\item[2.] El sistema responde mostrando una interfaz con dos campos: un campo para indicar el nombre y un campo para indicar una descripción del documento.
+\item[5.] El sistema valida que el nombre de la palabra clave que ha ingresado el catalogador para la nueva palabra clave no exista como nombre de otra palabra clave.
+\item[6. ]El sistema crea una nueva palabra clave con respecto a un documento de ciencias de la computación en el sistema y responde con un mensaje al usuario indicando el éxito de la operación.
+\end{itemize}
+} \\
+\hline
+\multicolumn{4}{|c|}{\bf {Flujo Alternativo}}\\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}
+{
+\begin{itemize}
+\item[7.1] El usuario acepta el mensaje de notificación del error generado por el sistema.
+\end{itemize}
+} &
+\multicolumn{2}{|p{0.45\textwidth}|}
+{
+\begin{itemize}
+\item[5.1] El sistema al realizar la validación del nombre y se percata de que el nombre dado a la nueva palabra clave ya existe.
+\item[6.1] El sistema genera un mensaje indicando que el nombre dado a la palabra clave no se puede utilizar porque ya existe un palabra clave con ese nombre.
+\end{itemize}
+} \\
+\hline
+\bf Poscondiciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+El sistema añade un registro correspondiente a las palabras clave que pueden llevar los documentos.
+} \\
+\hline
+\bf Excepciones: &\multicolumn{3}{p{0.675\textwidth}|}
+{
+Fallo de conexionen la base de datos.	Falla en el sistema de suministro de energía.
+} \\
+\hline
+\bf Aprobado por : & 
+ & \bf Fecha & 
+ \\
+\hline
+\end{longtable}
+\end{center}
+%\end{document}

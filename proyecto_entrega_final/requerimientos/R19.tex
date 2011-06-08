@@ -1,0 +1,67 @@
+%\documentclass[]{article}
+%\usepackage[spanish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{geometry}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\geometry{tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=2cm}
+%\begin{document}
+%para incluir comentar hasta acá
+\begin{center}
+\begin{longtable}{|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|p{0.225\textwidth}|}
+\hline
+\multicolumn{2}{|p{0.45\textwidth}|}{{\bf {Función del requerimiento:}}
+Permitir la modificación de áreas de interés existentes.} & {\bf{ Estado}} & Análisis \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf Identificador} &
+\multicolumn{2}{|p{0.45\textwidth}|}{R19} \\
+\hline
+\multicolumn{2}{|p{0.45\textwidth}}{\bf {Tipo de requerimiento}} &
+\multicolumn{2}{|p{0.45\textwidth}|}{Funcional}\\
+\hline
+\bf {Creado por} & María Andrea Cruz & \bf {Fecha  } & Marzo 31 2011\\
+\hline
+\bf {Actualizado por} & María Andrea  & \bf {Fecha  }& Abril 28 2011\\
+\hline
+\bf {Actualizado por} & Cristian Ríos & \bf {Fecha  }& Mayo 10 2011\\
+\hline
+\bf Descripción &\multicolumn{3}{p{0.675\textwidth}|}
+{ El sistema debe proporcionar la manera de poder realizar cambios en la lista de áreas de interés y sus subáreas solo por usuarios que ingresen al sistema con perfil administrador o catalogador, los cambios se refieren a la edición del nombre y/o la descripción del área, así como la área padre de que pueda llegar tener cada área.} \\
+\hline
+\bf Datos de entrada &\multicolumn{3}{p{0.675\textwidth}|}{
+Para modificar una área de las ciencias de la computación existente, el usuario que este realizando la operación deberá proporcionar su descripción y su área padre, si no se proporciona alguno de estos datos de tomará el dato que actualmente tenga el área.}\\
+\hline
+\bf Datos de salida &\multicolumn{3}{p{0.675\textwidth}|}
+{ El genera un mensaje e informa al usuario que esté realizando la operación, del éxito o no de la misma.} \\
+\hline
+\bf Resultados esperados &\multicolumn{3}{p{0.675\textwidth}|}
+{ El sistema debe realizar  una actualización en la base de datos con nueva información actualizada y correcta del área de interés según las especificaciones del usuario..} \\
+\hline
+\bf Origen &\multicolumn{3}{p{0.675\textwidth}|}
+{Documento de descripción del problema.} \\
+\hline
+\bf Dirigido a &\multicolumn{3}{p{0.675\textwidth}|}
+{Catalogador, administrador.} \\
+\hline
+\bf Prioridad &\multicolumn{3}{p{0.675\textwidth}|}{5} \\
+\hline
+\bf Requerimientos Asociados &\multicolumn{3}{p{0.675\textwidth}|}
+{ \begin{itemize}
+        \item R08
+        \item R18
+\end{itemize} } \\\hline
+\multicolumn{4}{|>{\columncolor[rgb]{0.8,0.8,0.8}}c|}{\bf Especificación}\\
+\hline
+\bf Precondiciones &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema debe de estar conectado a la base de datos permitiendo modificar un área de interés representada por un registro, el usuario debe estar bajo el perfil de catalogador o administrador.} \\
+\hline
+\hline
+\bf Poscondicion &\multicolumn{3}{p{0.675\textwidth}|}
+{El sistema contiene ahora en su base de datos información mejorada que permite obtener documentos de mejor forma al realizar una consulta.} \\
+\hline
+\bf Criterios de Aceptación &\multicolumn{3}{p{0.675\textwidth}|}
+{El requerimiento es aceptado si un usuario con perfil administrador o catalogador ingresa al sistema y puede modificar datos asociados a áreas de las ciencias de la computación existentes en el sistema biblioteca digital.} \\
+\hline
+\end{longtable}
+\end{center}
+%T\end{document} %comentar para inlcuir
